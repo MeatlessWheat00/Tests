@@ -1,0 +1,128 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+footer{
+    text-align: center;
+}
+header {
+    background-color: #110970;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+a {
+    color: #000000; /* Change to your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #ffffff; /* Change to your desired hover color */
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+main h2 {
+    font-size: 1.8rem;
+    color: #110970;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+main ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+main ul li {
+    background-color: #e0e4ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #2313d6;
+    font-size: 1.1rem;
+}
+
+/* Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header a {
+        font-size: 0.9rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-gallery img {
+        width: 100%;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+

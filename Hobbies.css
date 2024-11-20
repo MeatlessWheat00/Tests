@@ -1,0 +1,87 @@
+
+
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cbf0ef;
+}
+
+header {
+    background-color: #2313d6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+a {
+    color: #000000; /* Change to your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #ffffff; /* Change to your desired hover color */
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;    /* Center buttons horizontally */
+    justify-content: center; /* Center buttons vertically */
+    height: 70vh; /* Take up the full height of the page */
+    gap: 20px; /* Add spacing between the buttons */
+}
+
+
+
+.hobby-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 80%; /* Buttons take up 80% of the page width */
+    font-size: 25px; /* Increase font size */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Use flexbox to center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100px; /* Adjust the height to keep buttons large and proportional */
+    transition: background-color 0.3s ease;
+}
+
+.hobby-button:hover {
+    background-color: #555;
+}
+
+.hobby-content { 
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #cbf0ef;
+    margin: 20px;
+    border-radius: 5px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.gym-photo {
+    width: 100%;
+    max-width: 250px; /* Adjust this size as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 10px; /* Optional: Rounds the corners of the image */
+}

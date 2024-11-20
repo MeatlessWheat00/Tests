@@ -1,0 +1,98 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+footer{
+    text-align: center;
+}
+header {
+    background-color: #0f0b4b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+a {
+    color: #000000; /* Change to your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #ffffff; /* Change to your desired hover color */
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hobby-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hobby-button:hover {
+    background-color: #555;
+}
+
+.hobby-content {
+    display: block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #cbf0ef;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.hobby-pane {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow wrapping if there are too many images */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 70vh; /* Make the container fill the full height of the viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in height/width calculations */
+    margin: 0; /* Remove extra margins */
+}
+
+.game-image {
+    width: 600px; /* Set a consistent width */
+    height: 600px; /* Set a consistent height */
+    object-fit: contain; /* Maintain aspect ratio within the box */
+    margin: 5px; /* Space between images */
+    border-radius: 10px; /* Optional: Rounds the corners of the image */
+    align-items: center;
+}
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .game-image {
+        max-width: 250px; /* Decrease max width for tablets or small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-image {
+        max-width: 200px; /* Further decrease for mobile devices */
+    }
+}
+

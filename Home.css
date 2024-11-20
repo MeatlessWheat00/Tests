@@ -1,0 +1,125 @@
+
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+
+#particle-js { /* Corrected ID */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2313d6;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    z-index: 0;
+  }
+
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+#Links_bo {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center items */
+}
+.header-image {
+    position: absolute; /* Position the new image absolutely */
+    top: 5px; /* Adjust as needed for spacing */
+    left: 20px; /* Adjust as needed for spacing */
+    width: 150px; /* Set width as needed */
+    height: auto; /* Keep aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link-resume,
+.nav-link-skills,
+.nav-link-projects,
+.nav-linkH {
+    color: #ffffff; /* Common color for all links */
+    text-decoration: none;
+}
+
+/* Optional: Add hover effects */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;     /* Stacks the content vertically */
+    justify-content: center;    /* Centers vertically if needed */
+    align-items: center;        /* Centers horizontally */
+    text-align: center;         /* Centers text */
+    padding: 10px 20px;
+    font-size: 2em;
+    color: transparent; /* Will make text invisible, you might want to adjust */
+    position: relative;
+}
+
+#intro h1,
+#intro p {
+    color: #000000; /* Text color for headings and paragraphs */
+    text-align: center;
+    top: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;    /* Centers the image horizontally */
+    align-items: center;        /* Centers the image vertically */
+    width: 100%;                /* Makes the container span full width */
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;         /* Makes the image circular */
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
